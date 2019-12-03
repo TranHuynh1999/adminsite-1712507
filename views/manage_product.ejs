@@ -1,0 +1,677 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title></title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="index.html" class="logo"><b>Cửa Hàng<span>Đồ Chơi</span></b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+          <!-- settings start -->
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+              <i class="fa fa-tasks"></i>
+              <span class="badge bg-theme">4</span>
+              </a>
+            
+              
+             
+          <!-- settings end -->
+          <!-- inbox dropdown start-->
+          <li id="header_inbox_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+              <i class="fa fa-envelope-o"></i>
+              <span class="badge bg-theme">5</span>
+              </a>
+            
+          <!-- inbox dropdown end -->
+          <!-- notification dropdown start-->
+          <li id="header_notification_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+              <i class="fa fa-bell-o"></i>
+              <span class="badge bg-warning">7</span>
+              </a>
+            
+          <!-- notification dropdown end -->
+        </ul>
+        <!--  notification end -->
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="">Đăng xuất</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href=""><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">Trần Huỳnh</h5>
+          <li class="mt">
+            <a  href="index.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Trang chủ</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a href="calendar.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Quản lý đơn đặt hàng</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a href="pricing_table.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Top 10 Bán Chạy</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a href="form_validation.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Chỉnh sửa thông tin người dùng</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a href="basic_table.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Quản lý tài khoản người dùng</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a href="responsive_table.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Quản lý hệ thống gian hàng</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="advanced_table.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Quản lý sản phẩm</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a href="morris.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Thống kê doanh số</span>
+              </a>
+          </li>
+          </ul>
+          
+         
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <h3><i class="fa fa-angle-right"></i> Quản lý sản phẩm</h3>
+        <div class="row mb">
+          <!-- page start-->
+          <div class="content-panel">
+            <div class="adv-table">
+              <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
+                <thead>
+                  <tr>
+                    <th>Mã Sản Phẩm</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th class="hidden-phone">Giá</th>
+                    <th class="hidden-phone">Số Lượng (Còn)</th>
+                    <th class="hidden-phone">Số Lượng (Đã Bán)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="gradeX">
+                    <td>002035</td>
+                    <td>Móc khóa siêu nhân</td>
+                    <td class="hidden-phone">240.000</td>
+                    <td class="center hidden-phone">4</td>
+                    <td class="center hidden-phone">125</td>
+                  </tr>
+                  <tr class="gradeC">
+                    <td>002035</td>
+                    <td>Móc khóa sư tử</td>
+                    <td class="hidden-phone">240.000</td>
+                    <td class="center hidden-phone">5</td>
+                    <td class="center hidden-phone">456</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>002035</td>
+                    <td>Gẫu Teddy</td>
+                    <td class="hidden-phone">240.000</td>
+                    <td class="center hidden-phone">5</td>
+                    <td class="center hidden-phone">125</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>002035</td>
+                    <td>Gẫu Cưng</td>
+                    <td class="hidden-phone">240.000</td>
+                    <td class="center hidden-phone">6</td>
+                    <td class="center hidden-phone">32</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>002035</td>
+                    <td>Gẫu Cưng</td>
+                    <td class="hidden-phone">240.000</td>
+                    <td class="center hidden-phone">7</td>
+                    <td class="center hidden-phone">33</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>002035</td>
+                    <td>Gấu nhân hậu</td>
+                    <td class="hidden-phone">Win XP</td>
+                    <td class="center hidden-phone">6</td>
+                    <td class="center hidden-phone">43</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gấu cảm thán </td>
+                    <td class="hidden-phone">240.000 / 340.000+</td>
+                    <td class="center hidden-phone">174</td>
+                    <td class="center hidden-phone">343</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gấu cảm thán </td>
+                    <td class="hidden-phone">240.000 / 340.000+</td>
+                    <td class="center hidden-phone">115</td>
+                    <td class="center hidden-phone">343</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gấu cảm thán </td>
+                    <td class="hidden-phone">240.000 / 340.000+</td>
+                    <td class="center hidden-phone">18</td>
+                    <td class="center hidden-phone">45</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gấu cảm thán 3.0</td>
+                    <td class="hidden-phone">125.000</td>
+                    <td class="center hidden-phone">360</td>
+                    <td class="center hidden-phone">65</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gấu nhấn mạnh 1.0</td>
+                    <td class="hidden-phone">340.000+</td>
+                    <td class="center hidden-phone">245</td>
+                    <td class="center hidden-phone">655</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gấu nhấn mạnh 22</td>
+                    <td class="hidden-phone">120.000+</td>
+                    <td class="center hidden-phone">245</td>
+                    <td class="center hidden-phone">434</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gấu nhân hậu 7.2</td>
+                    <td class="hidden-phone">240.000 / 340.000</td>
+                    <td class="center hidden-phone">22</td>
+                    <td class="center hidden-phone">656</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gấu nhân hậu Browser 8</td>
+                    <td class="hidden-phone">240.000</td>
+                    <td class="center hidden-phone">22</td>
+                    <td class="center hidden-phone">456</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gấu nhân hậu Navigator 9</td>
+                    <td class="hidden-phone">240.000 / 340.000+</td>
+                    <td class="center hidden-phone">245</td>
+                    <td class="center hidden-phone">76</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gẫu cute 1.0</td>
+                    <td class="hidden-phone">240.000 / 140.000+</td>
+                    <td class="center hidden-phone">1</td>
+                    <td class="center hidden-phone">8</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gẫu cute 220</td>
+                    <td class="hidden-phone">240.000 / 140.000+</td>
+                    <td class="center hidden-phone">220</td>
+                    <td class="center hidden-phone">787</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gẫu cute 221</td>
+                    <td class="hidden-phone">240.000 / 140.000+</td>
+                    <td class="center hidden-phone">221</td>
+                    <td class="center hidden-phone">787</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gẫu cute 2232</td>
+                    <td class="hidden-phone">240.000 / 140.000+</td>
+                    <td class="center hidden-phone">2232</td>
+                    <td class="center hidden-phone">556</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gẫu cute 223</td>
+                    <td class="hidden-phone">240.000 / 140.000+</td>
+                    <td class="center hidden-phone">223</td>
+                    <td class="center hidden-phone">6</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gẫu cute 22</td>
+                    <td class="hidden-phone">240.000 / 140.000+</td>
+                    <td class="center hidden-phone">22</td>
+                    <td class="center hidden-phone">565</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gẫu cute 1.6</td>
+                    <td class="hidden-phone">240.000 / 140.000+</td>
+                    <td class="center hidden-phone">1.6</td>
+                    <td class="center hidden-phone">565</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gẫu cute 22</td>
+                    <td class="hidden-phone">240.000 / 140.000+</td>
+                    <td class="center hidden-phone">22</td>
+                    <td class="center hidden-phone">343</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gẫu cute 245</td>
+                    <td class="hidden-phone">240.000 / 140.000+</td>
+                    <td class="center hidden-phone">245</td>
+                    <td class="center hidden-phone">54</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Gấu Khỉ 220</td>
+                    <td class="hidden-phone">240.000 / 340.000+</td>
+                    <td class="center hidden-phone">245</td>
+                    <td class="center hidden-phone">23</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>003016</td>
+                    <td>Epiphany 2.20</td>
+                    <td class="hidden-phone">340.000</td>
+                    <td class="center hidden-phone">245</td>
+                    <td class="center hidden-phone">545</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>001012</td>
+                    <td>Gấu hiền lành</td>
+                    <td class="hidden-phone">120.000</td>
+                    <td class="center hidden-phone">125</td>
+                    <td class="center hidden-phone">556</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>001012</td>
+                    <td>Gấu mạnh mẽ</td>
+                    <td class="hidden-phone">120.000</td>
+                    <td class="center hidden-phone">312</td>
+                    <td class="center hidden-phone">67</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>001012</td>
+                    <td>Gấu cục súc</td>
+                    <td class="hidden-phone">325.000</td>
+                    <td class="center hidden-phone">312</td>
+                    <td class="center hidden-phone">8</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>001012</td>
+                    <td>Gấu dễ thương</td>
+                    <td class="hidden-phone">325.000</td>
+                    <td class="center hidden-phone">5415</td>
+                    <td class="center hidden-phone">67</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>001012</td>
+                    <td>Gấu mập mạp</td>
+                    <td class="hidden-phone">325.000</td>
+                    <td class="center hidden-phone">420</td>
+                    <td class="center hidden-phone">676</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>001012</td>
+                    <td>Gấu chập chững</td>
+                    <td class="hidden-phone">325.000</td>
+                    <td class="center hidden-phone">54</td>
+                    <td class="center hidden-phone">767</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>001012</td>
+                    <td>Móc khóa siêu nhân</td>
+                    <td class="hidden-phone">75.000</td>
+                    <td class="center hidden-phone">413</td>
+                    <td class="center hidden-phone">87</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>006025</td>
+                    <td>Gẫu thời thượng 7.0</td>
+                    <td class="hidden-phone">240.000 / 140.000+</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">565</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>006025</td>
+                    <td>Gẫu thời thượng 7.5</td>
+                    <td class="hidden-phone">240.000 / 340.000+</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">66</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>006025</td>
+                    <td>Gẫu thời thượng 8.0</td>
+                    <td class="hidden-phone">240.000 / 340.000+</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">41</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>006025</td>
+                    <td>Gẫu thời thượng 220</td>
+                    <td class="hidden-phone">240.000 / 340.000+</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">34</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>006025</td>
+                    <td>Gẫu thời thượng 9.0</td>
+                    <td class="hidden-phone">240.000 / 120.000+</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">343</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>006025</td>
+                    <td>Gẫu thời thượng 9.2</td>
+                    <td class="hidden-phone">Win 88+ / 120.000+</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">3535</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>006025</td>
+                    <td>Gẫu thời thượng 9.5</td>
+                    <td class="hidden-phone">Win 88+ / 120.000+</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">54</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>006025</td>
+                    <td>Gẫu thời thượng </td>
+                    <td class="hidden-phone">420.000</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">543</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>006025</td>
+                    <td>Gấu nhấn mạnhN800</td>
+                    <td class="hidden-phone">400.000</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">54</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>006025</td>
+                    <td>Gấu cảm thán</td>
+                    <td class="hidden-phone">450.000</td>
+                    <td class="center hidden-phone">220</td>
+                    <td class="center hidden-phone">343<sup>1</sup></td>
+                  </tr>
+                  <tr class="gradeC">
+                    <td>004001</td>
+                    <td>Gấu nhân hậu220</td>
+                    <td class="hidden-phone">340.000</td>
+                    <td class="center hidden-phone">220</td>
+                    <td class="center hidden-phone">343</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>004001</td>
+                    <td>Gấu nhân hậu220</td>
+                    <td class="hidden-phone">340.000</td>
+                    <td class="center hidden-phone">220</td>
+                    <td class="center hidden-phone">54</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>004001</td>
+                    <td>Gấu nhân hậu220</td>
+                    <td class="hidden-phone">340.000</td>
+                    <td class="center hidden-phone">220</td>
+                    <td class="center hidden-phone">34</td>
+                  </tr>
+                  <tr class="gradeX">
+                    <td>007011</td>
+                    <td>Móc khóa đại bàng</td>
+                    <td class="hidden-phone">340.000</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">66</td>
+                  </tr>
+                  <tr class="gradeC">
+                    <td>007011</td>
+                    <td>Gẫu Teddy</td>
+                    <td class="hidden-phone">125.000</td>
+                    <td class="center hidden-phone">1</td>
+                    <td class="center hidden-phone">C</td>
+                  </tr>
+                  <tr class="gradeC">
+                    <td>007011</td>
+                    <td>Gẫu Teddy</td>
+                    <td class="hidden-phone">140.000</td>
+                    <td class="center hidden-phone">1</td>
+                    <td class="center hidden-phone">66</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>005013</td>
+                    <td>Gấu Khỉ 220</td>
+                    <td>300.000</td>
+                    <td class="center">-</td>
+                    <td class="center">C</td>
+                  </tr>
+                  <tr class="gradeA">
+                    <td>005013</td>
+                    <td>Gấu Khỉ 3.4</td>
+                    <td class="hidden-phone">300.000</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">77</td>
+                  </tr>
+                  <tr class="gradeX">
+                    <td>005013</td>
+                    <td>Gấu Khỉ 0.8</td>
+                    <td class="hidden-phone">300.000</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">887</td>
+                  </tr>
+                  <tr class="gradeX">
+                    <td>005013</td>
+                    <td>Gấu Khỉ</td>
+                    <td class="hidden-phone">300.000</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">5454</td>
+                  </tr>
+                  <tr class="gradeX">
+                    <td>005013</td>
+                    <td>Gấu trắng</td>
+                    <td class="hidden-phone">300.000</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">665</td>
+                  </tr>
+                  <tr class="gradeC">
+                    <td>005013</td>
+                    <td>Gấu trắng</td>
+                    <td class="hidden-phone">120.000</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">343</td>
+                  </tr>
+                  <tr class="gradeC">
+                    <td>005013</td>
+                    <td>Gấu trắng</td>
+                    <td class="hidden-phone">300.000</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">233</td>
+                  </tr>
+                  <tr class="gradeU">
+                    <td>008012</td>
+                    <td>Gấu trắng</td>
+                    <td class="hidden-phone">-</td>
+                    <td class="center hidden-phone">-</td>
+                    <td class="center hidden-phone">111</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- page end-->
+        </div>
+        <!-- /row -->
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights <strong>TranHuynh</strong>
+        </p>
+        <div class="credits">
+          <!--
+            You are NOT allowed to delete the credit link to TemplateMag with free version.
+            You can delete the credit link only if you bought the pro version.
+            Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
+            Licensing information: https://templatemag.com/license/
+          -->
+          Created template by <a href="https://templatemag.com/">TranHuynh</a>
+        </div>
+        <a href="index.html#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+          </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" language="javascript" src="lib/advanced-datatable/js/jquery.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <script type="text/javascript" language="javascript" src="lib/advanced-datatable/js/jquery.dataTables.js"></script>
+  <script type="text/javascript" src="lib/advanced-datatable/js/DT_bootstrap.js"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <!--script for this page-->
+  <script type="text/javascript">
+    /* Formating function for row details */
+    function fnFormatDetails(oTable, nTr) {
+      var aData = oTable.fnGetData(nTr);
+      var sOut = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">';
+      sOut += '<tr><td>Rendering engine:</td><td>' + aData[1] + ' ' + aData[4] + '</td></tr>';
+      sOut += '<tr><td>Link to source:</td><td>Could provide a link here</td></tr>';
+      sOut += '<tr><td>Extra info:</td><td>And any further details here (images etc)</td></tr>';
+      sOut += '</table>';
+
+      return sOut;
+    }
+
+    $(document).ready(function() {
+      /*
+       * Insert a 'details' column to the table
+       */
+      var nCloneTh = document.createElement('th');
+      var nCloneTd = document.createElement('td');
+      nCloneTd.innerHTML = '<img src="lib/advanced-datatable/images/details_open.png">';
+      nCloneTd.className = "center";
+
+      $('#hidden-table-info thead tr').each(function() {
+        this.insertBefore(nCloneTh, this.childNodes[0]);
+      });
+
+      $('#hidden-table-info tbody tr').each(function() {
+        this.insertBefore(nCloneTd.cloneNode(true), this.childNodes[0]);
+      });
+
+      /*
+       * Initialse DataTables, with no sorting on the 'details' column
+       */
+      var oTable = $('#hidden-table-info').dataTable({
+        "aoColumnDefs": [{
+          "bSortable": false,
+          "aTargets": [0]
+        }],
+        "aaSorting": [
+          [1, 'asc']
+        ]
+      });
+
+      /* Add event listener for opening and closing details
+       * Note that the indicator for showing which row is open is not controlled by DataTables,
+       * rather it is done here
+       */
+      $('#hidden-table-info tbody td img').live('click', function() {
+        var nTr = $(this).parents('tr')[0];
+        if (oTable.fnIsOpen(nTr)) {
+          /* This row is already open - close it */
+          this.src = "lib/advanced-datatable/media/images/details_open.png";
+          oTable.fnClose(nTr);
+        } else {
+          /* Open this row */
+          this.src = "lib/advanced-datatable/images/details_close.png";
+          oTable.fnOpen(nTr, fnFormatDetails(oTable, nTr), 'details');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
