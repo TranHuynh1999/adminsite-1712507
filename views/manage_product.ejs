@@ -1,82 +1,4 @@
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="Dashboard">
-  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-  <title></title>
-
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Bootstrap core CSS -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!--external css-->
-  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Template Name: Dashio
-    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
-</head>
-
-<body>
-  <section id="container">
-    <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
-    <!--header start-->
-    <header class="header black-bg">
-      <div class="sidebar-toggle-box">
-        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-      </div>
-      <!--logo start-->
-      <a href="index.html" class="logo"><b>Cửa Hàng<span>Đồ Chơi</span></b></a>
-      <!--logo end-->
-      <div class="nav notify-row" id="top_menu">
-        <!--  notification start -->
-        <ul class="nav top-menu">
-          <!-- settings start -->
-          <li class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
-              <i class="fa fa-tasks"></i>
-              <span class="badge bg-theme">4</span>
-              </a>
-            
-              
-             
-          <!-- settings end -->
-          <!-- inbox dropdown start-->
-          <li id="header_inbox_bar" class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
-              <i class="fa fa-envelope-o"></i>
-              <span class="badge bg-theme">5</span>
-              </a>
-            
-          <!-- inbox dropdown end -->
-          <!-- notification dropdown start-->
-          <li id="header_notification_bar" class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
-              <i class="fa fa-bell-o"></i>
-              <span class="badge bg-warning">7</span>
-              </a>
-            
-          <!-- notification dropdown end -->
-        </ul>
-        <!--  notification end -->
-      </div>
-      <div class="top-menu">
-        <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="">Đăng xuất</a></li>
-        </ul>
-      </div>
-    </header>
+<% include partials/header.ejs %>
 
     <!--header end-->
     <!-- **********************************************************************************************************************************************************
@@ -92,47 +14,47 @@
           <li class="mt">
             <a  href="index.html">
               <i class="fa fa-dashboard"></i>
-              <span>Trang chủ</span>
+              <span>Thay Đổi Thông  Tin Cá Nhân</span>
               </a>
           </li>
           <li class="mt">
-            <a href="calendar.html">
+            <a href="manage_order">
               <i class="fa fa-dashboard"></i>
               <span>Quản lý đơn đặt hàng</span>
               </a>
           </li>
           <li class="mt">
-            <a href="pricing_table.html">
+            <a href="topten">
               <i class="fa fa-dashboard"></i>
               <span>Top 10 Bán Chạy</span>
               </a>
           </li>
           <li class="mt">
-            <a href="form_validation.html">
+            <a href="change_inforuser">
               <i class="fa fa-dashboard"></i>
               <span>Chỉnh sửa thông tin người dùng</span>
               </a>
           </li>
           <li class="mt">
-            <a href="basic_table.html">
+            <a href="manage_acount">
               <i class="fa fa-dashboard"></i>
               <span>Quản lý tài khoản người dùng</span>
               </a>
           </li>
           <li class="mt">
-            <a href="responsive_table.html">
+            <a href="manage_store">
               <i class="fa fa-dashboard"></i>
               <span>Quản lý hệ thống gian hàng</span>
               </a>
           </li>
           <li class="mt">
-            <a class="active" href="advanced_table.html">
+            <a class="active" href="manage_product">
               <i class="fa fa-dashboard"></i>
               <span>Quản lý sản phẩm</span>
               </a>
           </li>
           <li class="mt">
-            <a href="morris.html">
+            <a href="statics">
               <i class="fa fa-dashboard"></i>
               <span>Thống kê doanh số</span>
               </a>

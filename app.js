@@ -18,14 +18,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', require('./routes/index'));
-app.use('/basic_table.html',require('./routes/manage_account') );
-app.use('/form_validation.html',require('./routes/change_infor') );
-app.use('/advanced_table.html',require('./routes/manage_product') );
-app.use('/calendar.html',require('./routes/manage_order') );
-app.use('/responsive_table.html',require('./routes/manage_systemstall') );
-app.use('/pricing_table.html',require('./routes/top_ten') );
-app.use('/morris.html',require('./routes/sales_statics') );
-app.use('/index.html', require('./routes/index'));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

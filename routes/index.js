@@ -1,33 +1,24 @@
 var express = require('express');
 var router = express.Router();
+var indexController=require('../controllers/index.troller');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-router.get('/basic_table.html', function(req, res, next) {
-  res.render('manage_account', { title: 'Quản lý tài khoản' });
-});
-router.get('/form_validation.html', function(req, res, next) {
-  res.render('change_infor', { title: 'Thay đổi thông tin' });
-});
-router.get('/advanced_table.html', function(req, res, next) {
-  res.render('manage_product', { title: 'Quản lý sản phẩm' });
-});
-router.get('/calendar.html', function(req, res, next) {
-  res.render('manage_order', { title: 'Quản lý đơn hàng' });
-});
-router.get('/responsive_table.html', function(req, res, next) {
-  res.render('manage_systemstall', { title: 'Quản lý hệ thống gian hàng' });
-});
-router.get('/pricing_table.html', function(req, res, next) {
-  res.render('top_ten', { title: 'Top 10 sản phẩm ' }); 
-});
-router.get('/morris.html', function(req, res, next) {
-  res.render('sales_statics', { title: 'Thống kê doanh số' }); 
-});
-router.get('/index.html', function(req, res, next) {
-  res.render('index', { title: 'Trang chủ' }); 
-});
+router.get('/', indexController.index);
+
+router.get('/manage_acount', indexController.manageAcount);
+
+router.get('/change_inforuser',indexController.changeInforUsers);
+
+router.get('/manage_product',indexController.manageProduct); 
+
+router.get('/manage_order', indexController.manageOrder);
+
+router.get('/manage_store',indexController.manageStore);
+
+router.get('/topten', indexController.top);
+
+router.get('/statics', indexController.statics);
+
+router.get('/index.html',indexController.index);
 
 module.exports = router;
